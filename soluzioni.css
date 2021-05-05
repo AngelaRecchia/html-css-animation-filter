@@ -77,3 +77,16 @@
     transform: scale(1.5);
 }
 
+.ex-10-icon {
+    animation: gira 1s linear infinite;
+}
+
+@keyframes gira {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}

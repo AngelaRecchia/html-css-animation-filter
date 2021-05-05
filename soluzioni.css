@@ -90,3 +90,18 @@
         transform: rotate(-360deg);
     }
 }
+
+@keyframes gira-torna {
+    80% {
+        transform: rotate(315deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+}
+.ex-11-icon:hover {
+    animation: gira-torna 2s linear;
+}
+
+

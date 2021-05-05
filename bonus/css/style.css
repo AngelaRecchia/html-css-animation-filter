@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big-cont {
+    height: 100vh;
+    width: 100vw;
+}
+
+.big-cont:hover {
+    animation: colors 5s linear infinite alternate;
+}
+
+.container {
+    height: 100vh;
+    width: 45%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#forest {
+    height: 100%;
+    animation: round 10s linear infinite;
+    z-index: 2;
+}
+
+.circle-contain {
+    width: 66%;
+    height: 66%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow:hidden;
+    z-index: 1;
+}
+
+#circle {
+    width: 100%;
+    border-radius: 50%;
+    z-index: 1;
+    animation: round 6s linear infinite reverse;
+}
+
+.container:hover #circle {
+    animation: round-scale 3s linear infinite;
+}
+
+.container:hover #forest {
+    animation: round 10s linear infinite reverse;
+    filter: invert(1);
+}
+
+@keyframes round {
+    
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes round-scale {
+    0% {
+        transform:  scale(1);
+        filter: sepia(.5);
+    }
+
+    25% {
+        transform:  scale(.5);
+        filter: grayscale();
+    }
+
+    50% {
+        transform:  scale(0);
+        filter: sepia(1);
+    }
+
+    75% {
+        transform:  scale(.5);
+        filter: grayscale();
+    }
+
+    100% {
+        transform:  scale(1);
+        filter: sepia(1);
+    }
+}
+
+@keyframes colors {
+    0% {
+        background-color: #F4B642;
+    }
+
+    25% {
+        background-color: #650707;
+    }
+
+    50% {
+        background-color: #C5270F;
+    }
+
+    75% {
+        background-color: #330303;
+    }
+
+    100% {
+        background-color: #060404;
+    }
+}
+
+
+

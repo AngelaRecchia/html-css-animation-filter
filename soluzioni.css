@@ -93,7 +93,7 @@
 
 @keyframes gira-torna {
     80% {
-        transform: rotate(315deg);
+        transform: rotate(270deg);
     }
 
     90% {
@@ -104,4 +104,92 @@
     animation: gira-torna 2s linear;
 }
 
+.ex-12-button:hover .ex-12-top-white {
+    animation: avanti 1.5s linear;
+}
+
+@keyframes avanti {
+    50% {
+        left: 70%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: indietro 1.5s linear;
+}
+
+@keyframes indietro {
+    50% {
+        right: 70%;
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: top-gira 2s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bottom-gira 2s linear;
+}
+
+
+@keyframes top-gira {
+    20% {
+        left: 165px;
+        top: -10px
+    }
+
+    40% {
+        top: 55px; 
+        left: 165px   
+    }
+
+    70% {
+        top: 55px;
+        left: -10px
+    }
+    
+    90% {
+        top: -10px;
+        left: -10px;
+    }
+
+    100% {
+        top: -10px;
+        left: 20px;
+    }
+}
+
+@keyframes bottom-gira {
+    20% {
+        right: 150px;
+        bottom: -10px
+    }
+
+    40% {
+        bottom: 55px; 
+        right: 150px   
+    }
+
+    70% {
+        bottom: 55px;
+        right: -35px
+    }
+    
+    90% {
+        bottom: -10px;
+        right: -35px;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20px;
+    }
+}
 
